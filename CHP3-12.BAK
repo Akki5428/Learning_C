@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int i,aim,total;
+    clrscr();
+    printf("\nEnter your value:");
+    scanf("%d",&aim);
+    for(i=2000;i>0;i--)
+    {
+	 if(i==1 || i==2 || i==5 || i==10 || i==20 || i==50  || i==100 )
+	  {
+	   total=aim/i;
+	   aim= aim%i;
+	   printf("\n%d notes of %d",total,i);
+	  }
+    }
+
+
+     getch();
+}

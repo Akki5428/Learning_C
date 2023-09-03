@@ -1,0 +1,68 @@
+/*    AUTHOR:AKSHAT THAKKAR
+      DOC:06-10-21
+      TOPIC:CANDY BOX
+      */
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+      int candyX=40,candyY=2,boxX=40,boxY=22,score=0,life=3,d=0;
+      char ch;
+      textbackground(CYAN);
+      start:
+      clrscr();
+      gotoxy(60,2);
+      cprintf("SCORE = %d",score);
+      gotoxy(60,3);
+      cprintf("LIFE = %d",life);
+      gotoxy(candyX,candyY);
+      textcolor(BLACK);
+      cprintf("0");
+      gotoxy(boxX,boxY);
+      cprintf("|");
+      gotoxy(boxX+7,boxY);
+      cprintf("|");
+      gotoxy(boxX,boxY+1);
+      cprintf("||||||||");
+
+      if(kbhit())
+	   {
+		  ch=getch();
+		  switch(ch)
+		       {
+			     case 'a' : boxX--;
+					break;
+			     case 'd' : boxX++;
+					break;
+			     case 'x' : exit(0);
+		       }
+	   }
+	   candyY++;
+	   if(candyY==22)
+	   {
+		     d=candyX-boxX;
+		     if(d==1 || d==2 || d==3 || d==4 || d==5 || d==6 )
+		     {score++;}
+		else { life--;
+			if(life==0)
+			{
+			      clrscr();
+			      textcolor(RED);
+			      gotoxy(34,13);
+			      cprintf("\nGame Over");
+			      sound(1202);
+			      getch();
+			      nosound();
+			      exit(0);
+			}
+		     }
+	    candyY=2;
+	   candyX=rand()%80+1;
+	   }
+	     delay(100);
+      goto start;
+
+
+}

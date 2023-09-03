@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+
+void main()
+{
+     int i;
+     char ch='A';
+     textbackground(CYAN);
+     clrscr();
+     for(i=0;i<=25;i++)
+     {
+	 sound(20*i);
+	 delay(200);
+	 nosound();
+	 gotoxy(40,i+1);
+	 textcolor(i);
+	 cprintf("%c",ch+i);
+     }
+     getch();
+
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int a,b,choice;
+   clrscr();
+   cout<<:"\nEnter two numbers:":
+   cin >> a >> b ;
+   getch();
+
+}

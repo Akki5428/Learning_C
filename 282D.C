@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+      int marks[5][4];
+      int i,j;
+      float sum;
+      clrscr();
+      for(i=0;i<5;i++)
+      {
+	   printf("Enter student %d marks of 4 subject:",i+1);
+	   for(j=0;j<4;j++)
+	   {
+		   scanf("%d",&marks[i][j]);
+	   }
+      }
+      for(i=0;i<5;i++)
+      {
+	     sum=0;
+	     for(j=0;j<4;j++)
+	     {
+		  sum=sum+marks[i][j];
+	     }
+	  printf("\nstudent %d avrage marks is : %.2f",i+1,sum/4);
+      }
+    getch();
+}
+
+

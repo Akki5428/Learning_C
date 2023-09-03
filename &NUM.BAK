@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+void main()
+{
+     int num,b,sum=0,ld,anum,count=0;
+     clrscr();
+     printf("\nEnter your 3 digit number number:");
+     scanf("%d",&num);
+     anum=num;
+     for(b=1 ; b<=num;)
+       {
+	  if(num>0)
+	    {
+	       num=num/10;
+	       count++;
+	    }
+	    else
+	      break;
+       }
+     for(b=1; b<=count ;)
+     {
+       if(num>0)
+	 {
+	   ld=num%10;
+	   sum=sum+pow(ld,count);
+	   num=num/10;
+	 }
+	 else
+	     break;
+     }
+	if(sum==anum)
+	   {
+	      printf("The number is armstrong number.");
+	   }
+	else
+	   {
+	     printf("the number is not armstrong number");
+	   }
+
+
+    getch();
+}
