@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+       int num,i;
+       clrscr();
+       printf("\nEnter your num:");
+       scanf("%d",&num);
+       for(i=0 ; i<=num; i++)
+	{
+	if(i>2)
+	 {
+	     t=(num-2)+(num-1)
+	     printf("\n%d",t)
+	 }
+	 else if(i==2)
+	 {
+	      printf("0,1");
+	 }
+	 else
+	 {
+	      printf("0")
+	 }
+	}
+  getch();
+}

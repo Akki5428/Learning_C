@@ -1,0 +1,481 @@
+/*
+	   AUTHOR:AKSHAT THAKKAR
+	   DOC:27-9-21
+	   TOPIC:HOTEL MENU
+*/
+void main()
+{
+	 int a,b,c,d,e,f,g,h,i,j,k,l;
+	 textbackground(RED);
+	 menu;
+	 clrscr();
+	 printf("\n1.Breakfast      2.stater");
+	 printf("\n3.paneer         4.chinese");
+	 printf("\n5.punjabi        6.gujarati");
+	 printf("\n7.south indain   8.pizza");
+	 printf("\n9.fastfood       10.beverage");
+	 printf("\n11.icecream      12.farali");
+	 printf("\n13.my total bill 14.exit");
+	 printf("\nEnter the choice");
+	 scanf("%d",&a);
+	 premenu:
+	 switch(a)
+	 {
+		case 1 : printf("\n1.tea");
+			 printf("\n2.coffee");
+			 printf("\n3.bread butter");
+			 printf("\n4.maskaban");
+			 printf("\nEnter your choice:",b);
+			 scanf("%d",&b);
+			 switch(b)
+			 {
+			       case 1 : printf("\nprize of per plate is 15");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*15;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				case 2 : printf("\nprize of per plate is 15");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*15;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				case 3 : printf("\nprize of per plate is 30");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*30;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				case 4 : printf("\nprize of per plate is 30");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*30;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				default : printf("\nInvalid chhe");
+			 }
+			 break;
+		case 2 : printf("\n1.papad");
+			 printf("\n2.masala papad");
+			 printf("\n3.tomato soup");
+			 printf("\n4.sweet and sour soup");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&b);
+			 switch(b)
+			 {
+				 case 1 : printf("\nprize of per plate is 10");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*10;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 20");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*20;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 30");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*30;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 30");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*30;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		 case 3 : printf("\n1.paneer chilly");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&e);
+			 switch(e)
+			 {
+				 case 1 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		 case 4 : printf("\n1.pasta");
+			 printf("\n2.noddles");
+			 printf("\n3.fried ries");
+			 printf("\n4.manchuriyan");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&f);
+			 switch(f)
+			 {
+				      case 1 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		   case 5 : printf("\n1.kaju kofta");
+			 printf("\n2.chhole bhture");
+			 printf("\n3.punjabi thali");
+			 printf("\n4.chhole kulcha");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&g);
+			 switch(g)
+			 {
+				    case 1 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 80");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*80;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 140");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*140;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 80");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*80;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		  case 6 : printf("\n1.dalbati");
+			 printf("\n2.allu parotha");
+			 printf("\n3.Gujarati thali");
+			 printf("\n4.rotalo kadhi");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&h);
+			 switch(h)
+			 {
+				  case 1 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 140");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*140;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		   case 7 : printf("\n1.idli");
+			 printf("\n2.masala dosa");
+			 printf("\n3.paper dosa");
+			 printf("\n4.menduvada");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&i);
+			 switch(i)
+			 {
+			       case 1 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		  case 8 : printf("\n1.chesse pizza");
+			 printf("\n2.vegetable pizza");
+			 printf("\n3.jain pizza");
+			 printf("\n4.mini pizza");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&i);
+			 switch(j)
+			 {
+				    case 1 : printf("\nprize of per plate is 90");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*90;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 90");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*90;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		  case 9 : printf("\n1.dabeli");
+			 printf("\n2.vadapav");
+			 printf("\n3.burger");
+			 printf("\n4.vegetable sandwich");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&j);
+			 switch(j)
+			 {
+				    case 1 : printf("\nprize of per plate is 20");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*20;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 25");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*25;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		  case 10 : printf("\n1.orange juice");
+			 printf("\n2.mango juice");
+			 printf("\n3.milk");
+			 printf("\n4.oreo shake");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&k);
+			 switch(k)
+			 {
+
+			  case 1 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 70");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*70;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		  case 11 : printf("\n1.chocolate icecream");
+			 printf("\n2.mango icecream");
+			 printf("\n3.venila");
+			 printf("\n4.cokiess and cream");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&l);
+			 switch(l)
+			 {
+				     case 1 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 40");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*40;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }break;
+		   case 12 : printf("\n1.farali dabeli");
+			 printf("\n2.farali bhel");
+			 printf("\n3.farali pizza");
+			 printf("\n4.farali dhokla");
+			 printf("\nEnter your choice:");
+			 scanf("%d",&m);
+			 switch(m)
+			 {
+				  case 1 : printf("\nprize of per plate is 30");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*30;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 2 : printf("\nprize of per plate is 50");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*50;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 3 : printf("\nprize of per plate is 110");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*110;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 case 4 : printf("\nprize of per plate is 60");
+					printf("\nhow much plate do you need:");
+					scanf("%d",c);
+					d=c*60;
+					printf("you pay : %d",d);
+					goto premenu;
+					break;
+				 default : printf("\nInvalid chhe");
+			 }
+			 break;
+		   case 13 :
+		   case 14 : exit(0);
+		   }
+		   getch();
+}
+
+
+
+
+
+
+
+
+

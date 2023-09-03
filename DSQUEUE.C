@@ -1,0 +1,89 @@
+#include<stdio.h>
+#include<conio.h>
+#define SIZE 5
+int q[SIZE];
+int f=-1;
+int r=-1;
+
+void insert()
+{
+    int num;
+    if(r==SIZE-1)
+    {
+      printf("\nThe queue is Full...");
+    }
+    else
+    {
+      printf("Enter your number:");
+      scanf("%d",&num);
+      r++;
+      q[r]=num;
+      if(f==-1)
+      {
+	  f++;
+      }
+    }
+}
+
+void deleteq()
+{
+    if(f==-1)
+    {
+	printf("\nQueue is empty..");
+    }
+    else
+    {
+       printf("\n%d is deleted",q[f]);
+       if(f==r)
+       {
+	    f=-1;
+	    r=-1;
+       }
+       else
+       {
+	    f++;
+       }
+    }
+}
+
+void display()
+{
+       int i;
+       printf("\nThe contant is : ");
+       if(f!=-1)
+       {
+       for(i=f;i<=r;i++)
+	{
+	    printf("  %d",q[i]);
+	}
+       }
+       else
+       {
+	 printf("\nThe queue is empty");
+       }
+}
+
+void main()
+{
+     int choice;
+     clrscr();
+    while(1)
+    {
+     printf("\n0 for exit \n1 for insert \n2 for display \n3 for delete");
+     printf("\nEnter your choice :");
+     scanf("%d",&choice);
+     switch(choice)
+      {
+	    case 0 : exit(0);
+
+	    case 1 : insert();
+		     break;
+	    case 2 : display();
+		     break;
+	    case 3 : deleteq();
+		     break;
+	    default : printf("\nCase Invalid");
+      }
+      getch();
+     }
+}

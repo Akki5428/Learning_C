@@ -1,0 +1,72 @@
+#include<stdio.h>
+#include<conio.h>
+
+void Rightshift();
+void distrib();
+void print();
+
+int a[5]={1,2,-3,4,-5};
+
+void main()
+{
+     clrscr();
+     Rightshift();
+     distrib();
+     print();
+     getch();
+
+}
+
+void print()
+{
+      int i;
+      for(i=0;i<5;i++)
+      {
+	   printf("%d  ",a[i]);
+      }
+}
+
+void Rightshift()
+{
+       int i,temp;
+       temp = a[4];
+       for(i=4;i>0;i--)
+       {
+	    a[i] = a[i-1];
+       }
+       a[0] = temp;
+}
+
+void distrib()
+{
+       int i,j,p1=0,n1=0;
+       int p[5],n[5];
+       for(i=0;i<5;i++)
+       {
+	   if(a[i]>=0)
+	   {
+
+	       p[p1] = a[i];
+	       p1++;
+	   }
+	   else{
+	       n[n1] = a[i];
+	       n1++;
+	   }
+       }
+       i=0;
+       for(j=0;j<p1;j++)
+       {
+	   a[i] = p[j];
+	   i++;
+       }
+       for(j=0;j<n1;j++)
+       {
+	   a[i] = n[j];
+	   i++;
+       }
+}
+
+
+
+
