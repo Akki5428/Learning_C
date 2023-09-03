@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+      int phy[6],maths[6],chem[6],i,num;
+      clrscr();
+      for(i=1;i<6;i++)
+      {
+	  printf("student %d marks phy maths and chemistry:",i);
+	  scanf("%d",&phy[i]);
+	  scanf("%d",&maths[i]);
+	  scanf("%d",&chem[i]);
+      }
+      printf("\nEnter student number to check his marks:");
+      scanf("%d",&num);
+	  printf("\n physics = %d",phy[num]);
+	  printf("\n maths = %d",maths[num]);
+	  printf("\n chemistry = %d",chem[num]);
+   getch();
+}

@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+void rev(int *s,int *e)
+{
+	while(s<e)
+	{
+	     *s= *s ^ *e;
+	     *e= *s ^ *e;
+	     *s= *s ^ *e;
+	}
+}
+void main()
+{
+     int a[10],i,*ps,*pe;
+     clrscr();
+     printf("\nEnter 10 numbers");
+     for(i=0;i<10;i++)
+     {
+	   scanf("%d",&a[i]);
+     }
+     printf("\nYour array is : ");
+     for(i=0;i<10;i++)
+     {
+	   printf("%d ",a[i]);
+     }
+     ps=&a[0];
+     pe=&a[9];
+     rev(ps,pe);
+     printf("\nreverse array : ");
+     for(i=0;i<10;i++)
+     {
+	   printf("%d ",a[i]);
+     }
+     getch();
+}
+

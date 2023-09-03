@@ -1,0 +1,54 @@
+// function with structure
+// scan amd print student id and name
+#include<stdio.h>
+#include<conio.h>
+struct student{
+		 int sid;
+		 char name[30];
+	      }s1,s2,s3,s4;
+
+void scanStudentDetails();
+void displayStudentDetails();
+void main()
+{
+	    int choice;
+	    while(1)
+	    {
+		 clrscr();
+		 printf("\n1 for scan the details");
+		 printf("\n2 for display the details");
+		 printf("\n3 for exit ");
+		 printf("\nEnter your choice:");
+		 scanf("%d",&choice);
+		 switch(choice)
+		 {
+		     case 1 : scanStudentDetails();
+			      break;
+		     case 2 : displayStudentDetails();
+			       break;
+		     case 3 : exit(0);
+
+		     default : printf("\nInvalid choice");
+		 }
+	      getch();
+	    }
+}
+void scanStudentDetails()
+{
+	       printf("\nEnter the sid and name for s1");
+	       scanf("%d %s",&s1.sid,s1.name);
+	       printf("\nEnter the sid and name for s2");
+	       scanf("%d %s",&s2.sid,s2.name);
+	       printf("\nEnter the sid and name for s3");
+	       scanf("%d %s",&s3.sid,s3.name);
+	       printf("\nEnter the sid and name for s4");
+	       scanf("%d %s",&s4.sid,s4.name);
+}
+void displayStudentDetails()
+{
+	     printf("\nsid       name");
+	     printf("\n%d        %s ",s1.sid,s1.name);
+	     printf("\n%d        %s ",s2.sid,s2.name);
+	     printf("\n%d        %s ",s3.sid,s3.name);
+	     printf("\n%d        %s ",s4.sid,s4.name);
+}

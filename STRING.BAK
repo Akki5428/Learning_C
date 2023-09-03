@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+      char name[30];
+      char name1[30];
+      int len,n;
+      clrscr();
+      printf("\nEnter your name:");
+      gets(name);
+      len=strlen(name);
+      printf("\n%s",name);
+      strcpy(name1,name)
+      strrev(name);
+      n=strcmp(name,name1);
+      if(n==0)
+      {
+	      printf("\n%s is palindrome string",name1);
+      }
+      else
+      {
+	      printf("\n%s is not palindrome string",name1);
+      }
+      printf("\nlength of the string : %d",len);
+      printf("\nThe rev string of %s is %s",name1,name);
+      strlwr(name1);
+      printf("\n%s is lower",name1);
+      strupr(name1);
+      printf("\n%s is upper",name1);
+      getch();
+
+}

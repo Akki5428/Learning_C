@@ -1,0 +1,146 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+struct Student
+{
+      int roll;
+      char name[50];
+      int per;
+}s[3];
+
+void sortr();
+void sortn();
+void sortp();
+void main()
+{
+      int choice,i;
+      clrscr();
+      for(i=0;i<3;i++)
+      {
+	   printf("Enter the details of student %d",i+1);
+	   printf("\nroll no :");
+	   scanf("%d",&s[i].roll);
+	   printf("\nname :");
+	   scanf("%s",&s[i].name);
+	   printf("\nPercentage :");
+	   scanf("%d",&s[i].per);
+      }
+    while(1)
+    {
+      clrscr();
+      printf("\n1 for sorting roll no");
+      printf("\n2 for sorting name");
+      printf("\n3 for sorting percentage");
+      printf("\n4 for exit");
+      printf("\nEnter your choice");
+      scanf("%d",&choice);
+      switch(choice)
+      {
+	       case 1 :  sortr();
+			 break;
+	       case 2 :  sortn();
+			 break;
+	       case 3 :  sortp();
+			 break;
+	       case 4 : exit(0);
+      }
+      getch();
+    }
+}
+
+void sortr()
+{
+       int i,j;
+       int temp,temp1;
+       char te[50];
+       for(j=0; j<3 ; j++)
+	{
+	     for(i=0; i<2 ; i++)
+	     {
+		 if(s[i].roll<s[i+1].roll)
+		 {
+		     temp=s[i].roll;
+		     s[i].roll=s[i+1].roll;
+		     s[i+1].roll=temp;
+		     temp1=s[i].per;
+		     s[i].per=s[i+1].per;
+		     s[i+1].per=temp1;
+		     strcpy(te,s[i].name);
+		     strcpy(s[i].name,s[i+1].name);
+		     strcpy(s[i+1].name,te);
+		 }
+	     }
+	}
+      printf("\nAfter sorting :");
+      printf("\nroll no\tname\tpercentage");
+      for(i=0;i<3;i++)
+      {
+      printf("\n%d\t%s\t%d",s[i].roll,s[i].name,s[i].per);
+      }
+}
+
+
+void sortn()
+{
+       int i,j,n;
+       int temp,temp1;
+       char te[50];
+       for(j=0; j<3 ; j++)
+	{
+	     for(i=0; i<2 ; i++)
+	     {
+		 n=strcmpi(s[i].name,s[i+1].name);
+		 if(n<0)
+		 {
+		     temp=s[i].roll;
+		     s[i].roll=s[i+1].roll;
+		     s[i+1].roll=temp;
+		     temp1=s[i].per;
+		     s[i].per=s[i+1].per;
+		     s[i+1].per=temp1;
+		     strcpy(te,s[i].name);
+		     strcpy(s[i].name,s[i+1].name);
+		     strcpy(s[i+1].name,te);
+		 }
+	     }
+	}
+      printf("\nAfter sorting :");
+      printf("\nroll no\tname\tpercentage");
+      for(i=0;i<3;i++)
+      {
+      printf("\n%d\t%s\t%d",s[i].roll,s[i].name,s[i].per);
+      }
+}
+
+void sortp()
+{
+       int i,j;
+       int temp,temp1;
+       char te[50];
+       for(j=0; j<3 ; j++)
+	{
+	     for(i=0; i<2 ; i++)
+	     {
+		 if(s[i].per<s[i+1].per)
+		 {
+		     temp=s[i].roll;
+		     s[i].roll=s[i+1].roll;
+		     s[i+1].roll=temp;
+		     temp1=s[i].per;
+		     s[i].per=s[i+1].per;
+		     s[i+1].per=temp1;
+		     strcpy(te,s[i].name);
+		     strcpy(s[i].name,s[i+1].name);
+		     strcpy(s[i+1].name,te);
+		 }
+	     }
+	}
+    printf("\nAfter sorting :");
+      printf("\nroll no\tname\tpercentage");
+      for(i=0;i<3;i++)
+      {
+      printf("\n%d\t%s\t%d",s[i].roll,s[i].name,s[i].per);
+      }
+}
+

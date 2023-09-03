@@ -1,0 +1,111 @@
+#include<stdio.h>
+#include<conio.h>
+#include<dos.h>
+struct Student
+{
+	int sid;
+	char name[30];
+	float maths,eng,com,total;
+	float pr;
+	char grade;
+
+}s[10];
+void scan();
+void display();
+int search(int id);
+void main()
+{
+       int choice,index,id;
+       while(1)
+       {
+	 clrscr();
+	 printf("\n1 for scan");
+	 printf("\n2 for print");
+	 printf("\n3 for search");
+	 printf("\n4 for exit");
+	 printf("Enter your choice:");
+	 scanf("%d",&choice);
+	 switch(choice)
+	 {
+	      case 1 :   scan();
+			 break;
+	      case 2 :   display();
+			 break;
+	      case 3 :   printf("\nEnter your id:");
+			 scanf("%d",&id);
+			 index=search(id);
+			 if(index>=0)
+			 {
+			       printf("\nThe record is found");
+			       printf("\n%d\t%s\t%c",s[index].sid,s[index].name,s[index].grade);
+			       getch();
+			 }
+			 else
+			 {
+			       printf("\nThe record is not found");
+			 }
+			 break;
+		case 4 : exit(0);
+
+	       default : printf("\nInvalid choice");
+	 }
+	 getch();
+       }
+}
+
+void scan()
+{
+      float temp;
+      int i;
+      for(i=0;i<10;i++)
+      {
+
+	    printf("\nEnter student sid and name:");
+	    scanf("%d%s",&s[i].sid,s[i].name);
+	    printf("\nEnter student maths marks:");
+	    scanf("%f",&temp);
+	    s[i].maths=temp;
+	    printf("\nEnter student english marks:");
+	    scanf("%f",&temp);
+	    s[i].eng=temp;
+	    printf("\nEnter student computer marks:");
+	    scanf("%f",&temp);
+	    s[i].com=temp;
+	    s[i].total=s[i].maths+s[i].eng+s[i].com;
+	    s[i].pr=s[i].total/3;
+	    if(s[i].pr>=90)
+	     {
+		  s[i].grade='A';
+	     }
+	    else if(s[i].pr>=70 && s[i].pr<90)
+	    {
+		  s[i].grade='B';
+	    }
+	    else
+	    {
+		 s[i].grade='C';
+	    }
+      }
+}
+void display()
+{
+	 int i;
+	 printf("\nsid\tname\t\tmaths\teng\tcom\ttotal\tpr\tgrade");
+	 for(i=0;i<10;i++)
+	 {
+	     printf("\n%d\t%s\t\t%.2f\t%.2f\t%.2f\t%.2f\t%.2f\t%c",s[i].sid,s[i].name,s[i].maths,s[i].eng,s[i].com,s[i].total,s[i].pr,s[i].grade);
+	 }
+
+}
+int search(int id)
+{
+    int i;
+    for(i=0;i<2;i++)
+    {
+     if(id==s[i].sid)
+     {
+	   return i ;
+     }
+    }
+    return -1;
+}

@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+     int a=5;
+     int *p;
+     clrscr();
+     p=&a;
+     printf("\nThe value is %d and adress id %u",*p,p);
+     getch();
+}

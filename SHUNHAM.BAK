@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main()
+{
+     int a[10],i;
+     print("\nEnter 10 numbers :");
+     for(i=0;i<=9;i++)
+     {
+     scanf("%d",&a[i]);
+     }
+     getch();
+}
